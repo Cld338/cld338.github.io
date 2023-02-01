@@ -1,12 +1,164 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>Portfolio</title>
+	<!-- Pyscript 사용 선언
+	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+	<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+	 -->
+
+	<!-- 폰트 -->
+	<style>
+		@font-face {
+			font-family: 'NeoDunggeunmo';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Tenada';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'GmarketSansMedium';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		* {
+			font-family: sans-serif, 'NeoDunggeunmo', 'Tenada', 'GmarketSansMedium';
+		}
+
+	</style>
+
+	<!-- 아이콘 -->
+	<script src="https://kit.fontawesome.com/08e60da0c5.js" crossorigin="anonymous"></script>
+
+	<!-- 네비게이터 -->
+	<style>
+		html{
+			scroll-behavior: smooth;
+		}
+		ul, ol {
+			list-style:none
+		}
+		a {
+			text-decoration:none;
+			color:#fff;
+			font-size:17px;
+		}
+		nav {
+			width:80%;
+			overflow:hidden;
+			height:80px;
+			/* background-image: linear-gradient(to bottom, rgb(189, 101, 0), rgba(19, 38, 99, 0.603)); */
+			background-color: rgb(34, 35, 37);
+			/* background-image: linear-gradient(to bottom, , rgba(22, 52, 78, 0.9)); */
+			margin:0px;
+		}
+		#nav3 {
+			width: 100%;
+			position: relative;
+			text-align: center;
+		}
+		#nav3>a {
+			line-height: 80px;
+			display: block;
+			font-size: 30px;
+			font-weight: 900;
+			position: absolute;
+			left: 30px;
+		}
+
+		#nav3>ul {
+			display: inline-block;
+		}
+		
+		#nav3>ul li {
+			float: left;
+			line-height: 65px;
+			padding: 0 30px;
+		}
+
+		#nav3>ul li a{
+			font-size: 25px;
+			transition:all 0.3s;
+			text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+		
+		}
+
+		#nav3>ul li a:hover {
+			font-size: 30px;
+			font-weight: bold;
+			text-decoration: underline solid rgba(251, 255, 0, 0.829);
+		}
+
+
+	</style>
+
+
 </head>
+
+
+
+
+
+
+
 <body>
-  <p>Hello, World!</p>
+	<!-- 네비게이터 -->
+	<nav id="nav3">
+		<a href="#" style="font-size: 40px;"><i class="fa-solid fa-cube"></i></a>
+		<ul>
+		  <li><a href="#project">Projects</a></li>
+		  <li><a href="#">menu2</a></li>
+		  <li><a href="#">menu3</a></li>
+		  <li><a href="#">menu4</a></li>
+		  <li><a href="#">menu5</a></li>
+		</ul>
+	</nav>
+
+	<!-- 상단 배너 -->
+	<iframe src="./templates/banner.html" name="c" width="100%" scrolling="no" style="margin: 0; border: 0; height: 100vh; max-height: 603px;"></iframe>
+
+
+	<!-- 배경 -->
+	<div id="project" align="center" style="background-color: #b3c5cf; width: 100%; height: 1200px; padding-top: 20px;">
+		<!-- 박스 -->
+		<div align="center" style="background-color: #fff; width:1200px; height: 1000px; border-radius: 50px; padding-left: 20px; padding-right: 20px;">
+			<!-- 텍스트(Project) -->
+			<div style="padding-top: 50px; font-size: 55px; font-family: 'NeoDunggeunmo';">
+				<i class="fa-solid fa-terminal" style="font-size: 50px;">Projects</i>
+			</div>
+			<!-- 구분선 -->
+			<br><hr style="height: 10px; background-color: rgba(248, 250, 106, 0.5); border: 0;"><br>
+
+
+			<!-- 프로젝트 1 -->
+			<td ><iframe src="./templates/highschool_map.html" name="c" width=700 height=400 style="border-radius: 20px; float: left"></iframe></td>
+			<div style="float: right; width:480px; height: 400px;">
+				<h1><i class="fa-solid fa-mountain-sun" style="margin: 0;"><u><p id=project_title style="font-family: 'Tenada';">15분 도시, 제주</p></u></i></h1>
+				<p style="font-family: 'GmarketSansMedium';">
+					&nbsp;‘15분 도시’는 프랑스 소르본 대학의 카를로스 모레노 교수가 주창한 개념으로, 걷거나 자전거를 타고 15분이면 의료, 교육, 문화, 쇼핑, 금융, 일자리 등 일생생활의 모든 것을 가능케 하는 소규모 생활권 단위의 새로운 도시구조 패러다임을 말한다.
+				</p>
+				<p style="font-family: 'GmarketSansMedium';">
+					&nbsp;제주에서 15분 도시 시범지구를 실시한다는 뉴스를 보고 여러 필수 시설 중 고등학교에 15분 내에 도달 할 수 있는 지역을 시각화 해보았다.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div id="project" align="center" style="background-color: #000000d5; width: 100%; height: 200px; padding-top: 20px;">
+	</div>
 </body>
 </html>
