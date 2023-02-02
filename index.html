@@ -109,8 +109,8 @@
 	<!-- 프로젝트 -->
 	<style>
 		#project {
-			margin-left: 50px;
-
+			margin-left: 20px;
+			margin-right: 20px;
 		}
 		#project:hover {
 			border: 3px solid black;
@@ -139,7 +139,7 @@
 		<a href="#" style="font-size: 40px;"><i class="fa-solid fa-cube"></i></a>
 		<ul>
 			<li><a href="#AboutMe">About Me</a></li>
-		  	<li><a href="#projects">Products</a></li>
+		  	<li><a href="#projects">Projects</a></li>
 			<li><a href="#">menu3</a></li>
 			<li><a href="#">menu4</a></li>
 			<li><a href="#">menu5</a></li>
@@ -147,14 +147,18 @@
 	</nav>
 
 	<!-- 상단 배너 -->
-	<iframe src="./templates/banner.html" name="c" width="100%" scrolling="no" style="margin: 0; border: 0; padding: 0;height: 100vh; max-height: 603px;"></iframe>
+	<iframe src="./templates/banner.html" name="c" width="100%" height="400px" scrolling="no" style="margin: 0; border: 0; padding: 0;"></iframe>
 
 
 	<!-- 소개 -->
-    <div align="center" style="background-color: rgb(48, 100, 58); width: 100%; height: 1200px; padding-top: 50px;">
-        <div id="AboutMe" align="center" style="background-color: #fff; width:1300px; height: 1000px; border-radius: 50px; padding-left: 20px; padding-right: 20px;">
+    <div align="center" style="background-color: rgb(48, 100, 58); width: 100%; height: 800px; padding-top: 50px;">
+        <div id="AboutMe" align="center" style="background-color: #fff; width:80%; height: 700px; border-radius: 50px;">
 			<div style="padding-top: 50px; font-size: 55px; font-family: 'NeoDunggeunmo';">
 				<i class="fa-solid fa-paperclip" style="font-size: 50px;">About Me</i>
+			</div>
+			<div>
+				<i class="fa-solid fa-user" style="font-size: 70px;padding-right: 40%; padding-top: 50px;"></i>
+				
 			</div>
         </div>
     </div>
@@ -162,10 +166,10 @@
 	<!-- 프로젝트 -->
 	<div align="center" style="background-color: #84a8bb; width: 100%; height: 1800px; padding-top: 50px;">
 		<!-- 박스 -->
-		<div id="projects" align="center" style="background-color: #fff; width:1300px; height: 1500px; border-radius: 50px; padding-left: 20px; padding-right: 20px;">
+		<div id="projects" align="center" style="background-color: #fff; width:80%; height: 1500px; border-radius: 50px;">
 			<!-- 텍스트(Project) -->
 			<div style="padding-top: 50px; font-size: 55px; font-family: 'NeoDunggeunmo';">
-				<i class="fa-solid fa-terminal" style="font-size: 50px;">Products</i>
+				<i class="fa-solid fa-terminal" style="font-size: 50px;">Projects</i>
 			</div>
 
 			<!-- 구분선 -->
@@ -174,8 +178,8 @@
 
 			<!-- 프로젝트 1 -->
 			<div id="project" style="float: left;">
-				<!-- <iframe src="./templates/highschool_map.html" name="c" width=55% height=390 style="border-radius: 20px; float: left;"></iframe>
-				<div style="float: right; width:43%; height: 400px;">
+				<iframe src="./templates/highschool_map.html" name="c" width=55% height=390 style="border-radius: 20px; float: left;"></iframe>
+				<div style="float: right; width:43%; height: 400px; float: left;">
 					<h1><i class="fa-solid fa-mountain-sun" style="margin: 0;"></i><u><p id=project_title style="font-family: 'Tenada';">15분 도시, 제주</p></u></h1>
 					<p style="font-family: 'GmarketSansMedium';">
 						&nbsp;‘15분 도시’는 프랑스 소르본 대학의 카를로스 모레노 교수가 주창한 개념으로, 걷거나 자전거를 타고 15분이면 의료, 교육, 문화, 쇼핑, 금융, 일자리 등 일생생활의 모든 것을 가능케 하는 소규모 생활권 단위의 새로운 도시구조 패러다임을 말한다.
@@ -183,14 +187,14 @@
 					<p style="font-family: 'GmarketSansMedium';">
 						&nbsp;제주에서 15분 도시 시범지구를 실시한다는 뉴스를 보고 여러 필수 시설 중 고등학교에 15분 내에 도달 할 수 있는 지역을 시각화 해보았다.
 					</p>
-				</div> -->
+				</div>
 			</div>
 
 			<hr id="project_space">
-
+			
 			<!-- 프로젝트 2 -->
 			<div id="project"  style="float: left;">
-				<!-- <img src="./images/wordsheet.jpg" style="float: left; border-radius: 20px; width: 55%;">
+				<img src="./images/wordsheet.jpg" style="float: left; border-radius: 20px; width: 55%;">
 				<div style="float: right; width:43%; height: 400px;">
 					<h1><i class="fa-solid fa-language" style="margin: 0;"><u><p id=project_title style="font-family: 'Tenada';">텍스트 인식 단어장</p></u></i></h1>
 					<p style="font-family: 'GmarketSansMedium';">
@@ -199,7 +203,7 @@
 					<p style="font-family: 'GmarketSansMedium';">
 						&nbsp;사용자가 입력하지 않고, OCR을 통해 텍스트를 인식할 수 있도록 해보았다.
 					</p>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
