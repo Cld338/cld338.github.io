@@ -66,7 +66,7 @@
 		nav {
 			width:80%;
 			overflow:hidden;
-			height:80px;
+			height:10vh;
 			/* background-image: linear-gradient(to bottom, rgb(189, 101, 0), rgba(19, 38, 99, 0.603)); */
 			background-color: rgb(34, 35, 37);
 			/* background-image: linear-gradient(to bottom, , rgba(22, 52, 78, 0.9)); */
@@ -78,7 +78,7 @@
 			text-align: center;
 		}
 		#nav3>a {
-			line-height: 80px;
+			line-height: 10vh;
 			display: block;
 			font-size: 30px;
 			font-weight: 900;
@@ -92,19 +92,19 @@
 		
 		#nav3>ul li {
 			float: left;
-			line-height: 65px;
+			line-height: 4vw;
 			padding: 0 30px;
 		}
 
 		#nav3>ul li a{
-			font-size: 25px;
+			font-size: 1.5vw;
 			transition:all 0.3s;
 			text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 		
 		}
 
 		#nav3>ul li a:hover {
-			font-size: 30px;
+			font-size: 1.7vw;
 			font-weight: bold;
 			text-decoration: underline solid rgba(251, 255, 0, 0.829);
 		}
@@ -120,6 +120,8 @@
 		#project {
 			margin-left: 20px;
 			margin-right: 20px;
+			float: left;
+			height: 400px
 		}
 		#project:hover {
 			border: 3px solid black;
@@ -145,7 +147,7 @@
 <body>
 	<!-- 네비게이터 -->
 	<nav id="nav3" style="position:sticky;">
-		<a href="#" style="font-size: 40px;"><i class="fa-solid fa-cube"></i></a>
+		<a href="#" style="font-size: 3vw;"><i class="fa-solid fa-cube"></i></a>
 		<ul>
 			<li><a href="#AboutMe">About Me</a></li>
 		  	<li><a href="#projects">Projects</a></li>
@@ -156,11 +158,11 @@
 	</nav>
 
 	<!-- 상단 배너 -->
-	<iframe src="./templates/banner.html" name="c" width="100%" height="624em" scrolling="no" style="margin: 0; border: 0; padding: 0;"></iframe>
+	<iframe src="./templates/banner.html" name="c"scrolling="no" style="margin: 0; border: 0; padding: 0; width: 100%; height: 90vh;"></iframe>
 
 
 	<!-- 소개 -->
-    <div align="center" style="background-color: rgb(48, 100, 58); width: 100%; height: 800px; padding-top: 50px;">
+    <div align="center" style="background-color: #389561; width: 100%; height: 800px; padding-top: 50px;">
         <div id="AboutMe" align="center" style="background-color: #fff; width:80%; height: 700px; border-radius: 50px;">
 			<div style="padding-top: 50px; font-size: 55px; font-family: 'NeoDunggeunmo';">
 				<i class="fa-solid fa-paperclip" style="font-size: 50px;">About Me</i>
@@ -175,7 +177,7 @@
 	<!-- 프로젝트 -->
 	<div align="center" style="background-color: #84a8bb; width: 100%; height: 1800px; padding-top: 50px;">
 		<!-- 박스 -->
-		<div id="projects" align="center" style="background-color: #fff; width:80%; height: 1500px; border-radius: 50px;">
+		<div id="projects" align="center" style="background-color: #fff; width:70vw; height: 1500px; border-radius: 50px;">
 			<!-- 텍스트(Project) -->
 			<div style="padding-top: 50px; font-size: 55px; font-family: 'NeoDunggeunmo';">
 				<i class="fa-solid fa-terminal" style="font-size: 50px;">Projects</i>
@@ -186,9 +188,9 @@
 
 
 			<!-- 프로젝트 1 -->
-			<div id="project" style="float: left;">
-				<iframe src="./templates/highschool_map.html" name="c" width=55% height=390 style="border-radius: 20px; float: left;"></iframe>
-				<div style="float: right; width:43%; height: 400px; float: left;">
+			<div id="project">
+				<iframe src="./templates/highschool_map.html" name="c" width=450vw height=390px style="border-radius: 20px; float: left;"></iframe>
+				<div style="float: right; width: 30vw; height: 390px; float: left;">
 					<h1><i class="fa-solid fa-mountain-sun" style="margin: 0;"></i><u><p id=project_title style="font-family: 'Tenada';">15분 도시, 제주</p></u></h1>
 					<p style="font-family: 'GmarketSansMedium';">
 						&nbsp;‘15분 도시’는 프랑스 소르본 대학의 카를로스 모레노 교수가 주창한 개념으로, 걷거나 자전거를 타고 15분이면 의료, 교육, 문화, 쇼핑, 금융, 일자리 등 일생생활의 모든 것을 가능케 하는 소규모 생활권 단위의 새로운 도시구조 패러다임을 말한다.
@@ -202,15 +204,15 @@
 			<hr id="project_space">
 			
 			<!-- 프로젝트 2 -->
-			<div id="project"  style="float: left;">
-				<img src="./images/wordsheet.jpg" style="float: left; border-radius: 20px; width: 55%;">
+			<div id="project" style="margin-top: ;">
+				<img src="./images/wordsheet.jpg" style="float: left; border-radius: 20px; width: 35vw;">
 				<div style="float: right; width:43%; height: 400px;">
-					<h1><i class="fa-solid fa-language" style="margin: 0;"><u><p id=project_title style="font-family: 'Tenada';">텍스트 인식 단어장</p></u></i></h1>
+					<h1><i class="fa-solid fa-language" style="margin: 0;"></i><u><p id=project_title style="font-family: 'Tenada';">텍스트 인식 단어장</p></u></h1>
 					<p style="font-family: 'GmarketSansMedium';">
-						&nbsp;기존의 영단어장 앱은 사용자가 단어와 뜻을 하나씩 입력해야하는데, 이는 매우 번거로운 작업이며 시간도 많이 빼앗는다
+						&nbsp;기존의 영단어장 앱은 사용자가 단어와 뜻을 하나씩 입력해야하는데, 이는 매우 번거로운 작업이며 시간도 많이 빼앗는다. 
 					</p>
 					<p style="font-family: 'GmarketSansMedium';">
-						&nbsp;사용자가 입력하지 않고, OCR을 통해 텍스트를 인식할 수 있도록 해보았다.
+						&nbsp;사용자가 입력하지 않고, Tesseract OCR을 통해 이미지에서 텍스트를 가져온 뒤 스프레드시트에 저장하도록 하였다. 
 					</p>
 				</div>
 			</div>

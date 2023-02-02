@@ -27,19 +27,19 @@
             margin: 0;
         }
         body {
-            background-image: url(../images/banner.jpg);
+            background-image: url(../images/banner2.png);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 1919px;
-            height: 624px;
+            width: 100vw;
+            height: 100vh;
         }
 
         .circle {
             position: absolute;
             top: 0;
             left: 0;
-            width: 300px;
-            height: 300px;
+            width: 3vh;
+            height: 3vh;
             border-radius: 50%; 
             border: 8000px solid  rgba(255, 165, 0, 0.25) ;
             background-clip: padding-box;
@@ -62,14 +62,14 @@
 </head>
 
 <body>
-    <div class="wrap" style="position: absolute; top: 80%; left: 50%; margin-left: -1.5%;">
-        <i class="fa-solid fa-angles-down" style="color: azure; align-content: center; font-size: 400%;"></i>
+    <div class="wrap" style="position: absolute; top: 80vh; left: 50%; margin-left: -2.5vw;">
+        <i class="fa-solid fa-angles-down" style="color: azure; align-content: center; font-size: 5vw;"></i>
     </div>
     <div class="circle"></div>
     
     
-    <div style="padding-top: 200px;padding-left: 100px; color: azure; align-content: center;">
-        <div style="font-family: 'RixInooAriDuriR'; font-size: 500%;">
+    <div style="padding-top: 80px;padding-left: 100px; color: azure; align-content: center;">
+        <div style="font-family: 'RixInooAriDuriR'; font-size: 5vw;">
                 Jihun's
             <br>Portfolio
         </div>
@@ -86,8 +86,8 @@
         });
 
         document.addEventListener("mouseover", (e) => { // mousemove이벤트를 이용해 움
-            circle.style.width = '300px';
-            circle.style.height = '300px';
+            circle.style.width = '35vh';
+            circle.style.height = '35vh';
             document.body.style.cursor = 'none';
         });
 
