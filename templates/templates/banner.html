@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>background</title>
+    <script src="https://kit.fontawesome.com/08e60da0c5.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: 'RixInooAriDuriR';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            font-family: 'RixInooAriDuriR';
+
+        }
+    </style>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+        }
+        body {
+            background-image: url(../images/banner2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3vh;
+            height: 3vh;
+            border-radius: 50%; 
+            border: 8000px solid  rgba(255, 165, 0, 0.25) ;
+            background-clip: padding-box;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+
+    <style>
+        .wrap {
+            margin-top: 0px;
+            text-align: center;
+            animation: motion 0.5s linear 0s infinite alternate;
+        }
+        @keyframes motion {
+            0% {margin-top: 0px;}
+            100% {margin-top: 10px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap" style="position: absolute; top: 80vh; left: 50%; margin-left: -2.5vw;">
+        <i class="fa-solid fa-angles-down" style="color: azure; align-content: center; font-size: 5vw;"></i>
+    </div>
+    <div class="circle"></div>
+    
+    
+    <div style="padding-top: 80px;padding-left: 100px; color: azure; align-content: center;">
+        <div style="font-family: 'RixInooAriDuriR'; font-size: 5vw;">
+                Jihun's
+            <br>Portfolio
+        </div>
+        
+    </div>
+    <script>
+        const circle = document.querySelector(".circle");
+        document.addEventListener("mousemove", (e) => { // mousemove이벤트를 이용해 움
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            circle.style.left = mouseX + 'px';
+            circle.style.top = mouseY + 'px';
+            
+        });
+
+        document.addEventListener("mouseover", (e) => { // mousemove이벤트를 이용해 움
+            circle.style.width = '35vh';
+            circle.style.height = '35vh';
+            document.body.style.cursor = 'none';
+        });
+
+        document.addEventListener("mouseout", (e) => { // mousemove이벤트를 이용해 움
+            circle.style.width = '0';
+            circle.style.height = '0';
+            
+        });
+    </script>
+
+</body>
+
+</html>
